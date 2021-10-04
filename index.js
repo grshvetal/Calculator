@@ -89,21 +89,13 @@ $('document').ready(function () {
 
     function clear() { //function 5: clears variables
         d0 = 0;
-        p1 = 0;
         d1 = 0;
-        p2 = 0;
         d2 = 0;
-        p3 = 0;
         d3 = 0;
-        p4 = 0;
         d4 = 0;
-        p5 = 0;
         d5 = 0;
-        p6 = 0;
         d6 = 0;
-        p7 = 0;
         d7 = 0;
-        p8 = 0;
         value = 0;
         pointValue = 0.0;
         pointFlag = false;
