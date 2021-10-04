@@ -18,8 +18,8 @@ $('document').ready(function () {
         opclickCounter = 0;
     var opCode, answer;
     var btn_no;
-    // FUNCTIONS TO BE USED -------------------------------------------------
-    function digitStore() { //Stores digits of a number (up to 8 digits)
+    // FUNCTIONS TO BE USED (totol functions : 7) -------------------------------------------------
+    function digitStore() { // function 1: Stores digits of a number (up to 8 digits)
         switch (clickCounter) {
             case 1:
                 d0 = btn_no;
@@ -75,19 +75,19 @@ $('document').ready(function () {
         }
     }
 
-    function pointValuation() { //Calculates and stores one decimal at a time (which will be added to a value)
+    function pointValuation() { //function 2: Calculates and stores one decimal at a time (which will be added to a value)
         pointValue = btn_no / (Math.pow(10, clickCounter));
     }
 
-    function display(xyz) { // just displays number on the display
+    function display(xyz) { //function 3: just displays number on the display
         $(".display").html('' + xyz);
     }
 
-    function valuation() { //Calculates a number/value from stores digits
+    function valuation() { //function 4: Calculates a number/value from stores digits
         value = d0 + d1 * 10 + d2 * 100 + d3 * 1000 + d4 * 10000 + d5 * 100000 + d6 * 1000000 + d7 * 10000000;
     }
 
-    function clear() {
+    function clear() { //function 5: clears variables
         d0 = 0;
         p1 = 0;
         d1 = 0;
@@ -110,7 +110,7 @@ $('document').ready(function () {
         clickCounter = 0;
     }
 
-    function operate() { //Performs a given operation on the numbers
+    function operate() { //function 6: Performs a given operation on the numbers
         switch (opCode) {
             case 1:
                 answer = value1 + value2;
@@ -129,7 +129,7 @@ $('document').ready(function () {
         display(answer);
     }
 
-    function go() {
+    function go() { //Function 7: 
         if (opclickCounter == 1) { //if it is a first operation key press, store the number as a value-1
             value1 = value;
             clear();
@@ -145,7 +145,7 @@ $('document').ready(function () {
         }
     }
 
-    // OPERATIONS KEY PROCEDURES -------------------------------------------
+    // OPERATION KEY PROCEDURES -------------------------------------------
 
     $("#plus").on("click", function () {
         opclickCounter++;
