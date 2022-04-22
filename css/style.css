@@ -1,3 +1,7 @@
+body {
+    background: #7ec0ee;
+}
+
 .wrapper {
     margin: 0 auto;
 }
@@ -29,24 +33,20 @@
     background-color: #669999;
 }
 
+/* -------- All Button styles -------- */
 button {
     margin-left: 20px;
     margin-bottom: 20px;
     float: left;
     width: 50px;
     height: 40px;
-    border: none;
+    border: 1px solid gray;
     border-radius: 4px;
+    font-weight: bolder;
 }
 
 button#zero {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    float: left;
     width: 120px;
-    height: 40px;
-    border: none;
-    border-radius: 4px;
 }
 
 button#equal {
@@ -60,14 +60,11 @@ h4 {
     color: white;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
 }
 
 #ac,
 #ce {
     color: white;
     background-color: #b30000;
-}
-
-body {
-    background: #7ec0ee;
 }
