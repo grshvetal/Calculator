@@ -112,11 +112,9 @@ $('document').ready(function () {
                 break;
             case 3:
                 answer = value1 * value2;
-                answer = answer.toFixed(2);
                 break;
             case 4:
                 answer = value1 / value2;
-                answer = answer.toFixed(2);
         }
         display(answer);
     }
