@@ -41,13 +41,7 @@ button {
 }
 
 button#zero {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    float: left;
     width: 120px;
-    height: 40px;
-    border: none;
-    border-radius: 4px;
 }
 
 button#equal {
