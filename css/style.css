@@ -1,3 +1,7 @@
+body {
+    background: #7ec0ee;
+}
+
 .wrapper {
     margin: 0 auto;
 }
@@ -29,6 +33,7 @@
     background-color: #669999;
 }
 
+/* -------- All Button styles -------- */
 button {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -62,8 +67,4 @@ h4 {
 #ce {
     color: white;
     background-color: #b30000;
-}
-
-body {
-    background: #7ec0ee;
 }
